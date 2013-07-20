@@ -9,5 +9,6 @@
   
   <modules>
     <module>JSF22</module>
+    <module>Servlet31</module>
   </modules>
 </project>

@@ -1,12 +1,31 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
-    <h:head>
-        <title>Facelet Title</title>
-    </h:head>
-    <h:body>
-        Hello from Facelets
-    </h:body>
-</html>
+     xmlns:jsf="http://java.sun.com/jsf" 
+     xmlns:p="http://primefaces.org/ui"
+     xmlns:f="http://java.sun.com/jsf/core">
+    
+    <head jsf:id="head">
+        <title>Putting it all together</title>
+        <script jsf:target="body" jsf:name="js.js"/>
+        <link jsf:name="css.css" rel="stylesheet" type="text/css" />
+    </head>
+    
+    <body jsf:id="body">
+        <form jsf:id="form" jsf:prependId="false">
+            <p:panelGrid id="panel" columns="2">
 
+                <label jsf:for="name">Name</label>
+                <input jsf:id="name" type="text" jsf:value="#{friendlyMarkupBean.name}" />
+
+                <label jsf:for="tel">Phone</label>
+                <input jsf:id="tel" type="tel" jsf:value="#{friendlyMarkupBean.phone}" />
+
+                <label jsf:for="email">Email</label>
+                <input jsf:id="email" type="email" jsf:value="#{friendlyMarkupBean.email}" />
+
+                <label for="progress">Progress</label>
+                <progress jsf:id="progress" max="3">#{friendlyMarkupBean.progress} of 3</progress>
+            </p:panelGrid>
+        </form>
+    </body>
+</html>
