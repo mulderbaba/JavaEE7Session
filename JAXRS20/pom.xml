@@ -36,8 +36,7 @@
         <dependency>
             <groupId>org.glassfish.jersey.core</groupId>
             <artifactId>jersey-client</artifactId>
-            <version>2.0-m12-1</version>
-            <scope>runtime</scope>
+            <version>2.0-m09-1</version>
         </dependency>        
 
     </dependencies>

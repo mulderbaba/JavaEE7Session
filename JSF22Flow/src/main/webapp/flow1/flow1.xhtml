@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <head>
+        <title>First page in the flow</title>
+    </head>
+    <body bgcolor="red">
+        <h:form prependId="false">
+            <p>First page in the flow</p>
+            <p>Flow bean name: #{flow1Bean.name}</p>
+
+            <p>Has a flow: #{null != facesContext.application.flowHandler.currentFlow}.</p>
+
+            <p><h:commandButton id="flow1a" value="next" action="flow1a" /></p>
+
+        </h:form>
+    </body>
+</html>
