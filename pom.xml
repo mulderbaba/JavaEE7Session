@@ -9,8 +9,8 @@
   
   <modules>
     <module>JSF22</module>
-    <module>JSF22Flow</module>
     <module>Servlet31</module>
     <module>JAXRS20</module>
+    <module>JSF22Flow</module>
   </modules>
 </project>
