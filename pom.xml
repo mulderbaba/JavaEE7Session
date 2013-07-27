@@ -12,5 +12,7 @@
     <module>Servlet31</module>
     <module>JAXRS20</module>
     <module>JSF22Flow</module>
+    <module>WhiteboardApp</module>
+    <module>Test</module>
   </modules>
 </project>
